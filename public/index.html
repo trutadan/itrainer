@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>iTrainer</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script
+      src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/4451c49a2a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body class="bg-gray-100 text-gray-800">
+    <div class="bigBox flex flex-wrap justify-center items-start mt-10">
+      <!-- Left side of the screen -->
+      <div id="results" class="col">
+        <!-- Camera with settings section -->
+        <div
+          id="load-app-save"
+          class="bg-gray-300 rounded-t-md rounded-b-md shadow-2xl mb-12"
+          style="min-width: 680px"
+        >
+          <div
+            id="status"
+            class="text-center font-semibold text-gray-700 py-2 px-5"
+          >
+            <span>Loading...</span>
+          </div>
+
+          <div id="app" class="flex justify-center mx-3">
+            <!-- Canvas will go here -->
+          </div>
+
+          <div class="text-center text-gray-700 py-5 px-5">
+            <div id="switchButtonContainer" class="inline-block"></div>
+          </div>
+        </div>
+
+        <!-- Max angle values section -->
+        <div class="flex justify-between items-baseline">
+          <h2 class="text-2xl font-bold py-5 inline-block">Max Values:</h2>
+          <div id="resetButtonContainer" class="inline-block my-0"></div>
+        </div>
+        <div class="flex">
+          <div class="w-1/2 mr-4 bg-gray-300 p-4 rounded-lg shadow-xl mb-5">
+            <p class="text-lg font-semibold">Knee Flexion:</p>
+            <p class="text-4xl font-bold"><span id="kneeFlexion">-</span>°</p>
+          </div>
+          <div class="w-1/2 bg-gray-300 p-4 rounded-lg shadow-xl mb-5">
+            <p class="text-lg font-semibold">Hip Flexion:</p>
+            <p class="text-4xl font-bold"><span id="hipFlexion">-</span>°</p>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="w-1/2 bg-gray-300 mr-4 p-4 rounded-lg shadow-xl">
+            <p class="text-lg font-semibold">Shin Angle:</p>
+            <p class="text-4xl font-bold"><span id="shinAngle">-</span>°</p>
+          </div>
+          <div class="w-1/2 bg-gray-300 p-4 rounded-lg shadow-xl">
+            <p class="text-lg font-semibold">Trunk Lean:</p>
+            <p class="text-4xl font-bold"><span id="trunkAngle">-</span>°</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right side of the screen -->
+      <div class="col justify-center">
+        <!-- Execution logs section -->
+        <body>
+          <header>
+            <h1 class="custom-heading">
+              Better Squats with
+              <b class="bold-text-heading"><i>iTrainer</i></b>
+            </h1>
+          </header>
+        </body>
+
+        <div
+          class="logs bg-gray-300 rounded-t-md rounded-b-md shadow-2xl mb-12"
+        ></div>
+
+        <!-- Alternative exercises section -->
+        <header>
+          <h1 class="custom-heading">Helpful Squats Alternatives</h1>
+        </header>
+
+        <div
+          class="alternatives text-center bg-gray-300 rounded-t-md rounded-b-md shadow-2xl mb-12"
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>
