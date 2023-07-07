@@ -1,6 +1,6 @@
 # iTrainer 🏋️
 <h2>iTrainer is an AI-powered app that helps you perform exercises correctly.</h2>
-<h2>It was developed during the 3 days of the Cluj Hackathon, by Truta Dan (https://github.com/trutadan) and myself.</h2>
+<h2>It was developed during the 3 days of the Cluj Hackathon, by Hatisi Bogdan(https://github.com/bogdanhatisi) and myself.</h2>
 <img src="https://github.com/bogdanhatisi/iTrainer/blob/main/GUI.png"/>
 
 
@@ -21,7 +21,7 @@
 
 
 <h1>Future development</h1>
-<h3>🚀 As seen in the GUI, we are planning to implement exercise recommendations along with more supported exercises.</h3>
+<h3>🚀 We are planning to implement more exercises.</h3>
 
 <h1>Behind the scenes</h1>
 
